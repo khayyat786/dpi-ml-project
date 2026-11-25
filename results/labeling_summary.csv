@@ -1,0 +1,14 @@
+item,count
+files,9
+n10_no_packets_after_hello,18
+n20_no_packets_after_hello,18
+n5_no_packets_after_hello,18
+tcp_flows_with_sni,1580
+tcp_flows_without_sni,1258
+udp_flows,4429
+label_ignored_background,85
+label_kept,1179
+label_shared_between_classes,316
+class_browsing_labeled_flows,1110
+class_whatsapp_labeled_flows,37
+class_youtube_labeled_flows,32

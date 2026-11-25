@@ -1,0 +1,14 @@
+# Rules for the baseline (SNI-based) DPI engine.
+# A flow is matched by its website name (SNI). A rule for "example.com" also
+# matches every sub-domain such as "www.example.com".
+# BLOCK    = drop the flow (simulated: it is counted, not really dropped)
+# THROTTLE = slow the flow down (simulated: it is counted, not really slowed)
+# ALLOW    = let the flow through
+default_action: ALLOW
+rules:
+  - action: BLOCK
+    domains:
+      - doubleclick.net
+  - action: THROTTLE
+    domains:
+      - googlevideo.com

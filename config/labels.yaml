@@ -1,0 +1,35 @@
+# How flows get their class label (self-labeling).
+# A flow gets a label only when its website name (SNI) is visible, it is not
+# background noise, and its website does not appear in more than one class.
+# The label is the activity of the capture session (from the file name).
+
+# Classes used for training (a class with too few flows is dropped).
+classes: [youtube, whatsapp, browsing]
+
+# File-name prefix -> class.  Example: youtube_B_01.pcapng -> youtube
+prefix_to_class:
+  youtube: youtube
+  whatsapp: whatsapp
+  browsing: browsing
+  dload: download
+  download: download
+
+# Background traffic from the operating system, antivirus and browser that is
+# not part of the activity being recorded. A rule also matches sub-domains.
+ignore_domains:
+  - microsoft.com
+  - microsoftonline.com
+  - office.com
+  - office.net
+  - windows.com
+  - windowsupdate.com
+  - msn.com
+  - live.com
+  - bing.com
+  - avcdn.net
+  - avast.com
+  - avg.com
+  - gen.digital
+
+# A class needs at least this many labeled flows, otherwise it is dropped.
+min_flows_per_class: 30

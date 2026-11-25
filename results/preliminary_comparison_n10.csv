@@ -1,0 +1,4 @@
+system,flows_classified,of,accuracy,balanced_accuracy,macro_f1
+Baseline (website name only),0,1161,n/a,n/a,n/a
+Majority guess,1161,1161,0.9406,0.3333,0.3231
+ML: Gradient Boosting,1161,1161,0.9466,0.7668,0.7259

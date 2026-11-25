@@ -227,3 +227,6 @@ data/
 *.pcap
 *.pcapng
 models/*.joblib
+results/baseline/
+results/dataset_n*.csv
+results/e1_mismatches.csv

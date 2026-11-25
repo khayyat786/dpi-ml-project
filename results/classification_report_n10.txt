@@ -1,0 +1,11 @@
+Gradient Boosting, first 10 packets
+
+              precision    recall  f1-score   support
+
+    browsing       0.98      0.96      0.97      1092
+    whatsapp       0.71      0.65      0.68        37
+     youtube       0.43      0.69      0.53        32
+
+    accuracy                           0.95      1161
+   macro avg       0.71      0.77      0.73      1161
+weighted avg       0.95      0.95      0.95      1161
